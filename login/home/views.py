@@ -12,7 +12,7 @@ def loginn(request):
         password = request.POST.get('password')
 
         # Check for hardcoded credentials
-        if username == 'jerin' and password == 'login':
+        if username == 'Gawtham' and password == 'login':
             request.session['is_logged_in'] = True  # Set session variable
             return redirect('home')  # Redirect to home page
         else:
